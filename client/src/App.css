@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300&display=swap');
+
+/*
+  Exo, Work Sans, Fira Code Sans, Saira, Haneken Grotesk, Roboto Mono, Public Sans, JetBrains Mono, Roboto, Source Sans Pro, Karla
+*/
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#root {
+  width: 100vw !important;
+  margin: 0;
+  padding: 0;
+}
+
+.dnone {
+  display: none !important;
+}
+
+.logo {
+  height: 1.5em;
+}
+
+#topbar {
+  display: flex;
+  height: 3em;
+  align-items: center;
+  flex-direction: row;
+  background: #e66767;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+}
+
+#logotext {
+  font-family: 'Work Sans', sans-serif !important;
+  letter-spacing: 3px;
+  font-weight: 300;
+  color: white;
+}
+
+.nav-link {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 300;
+}
+
+input[placeholder="Search"] {
+  width: 65%;
+  margin-bottom: 2px;
+} #searchIcon, input[placeholder="Search"] {
+  color: white;
+} #searchIcon { 
+  cursor: pointer;
+  background: #1a1a1a;
+  padding: 1em;
+  width: 3em;
+  height: 3em;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+}
+
+#toprightstuff {
+  display: flex;
+  align-items: center;
+}
+
+#account {
+  position: absolute;
+  right: 0;
+}
+
+#title {
+  color: white;
+  font-family: 'Saira', sans-serif;
+  font-size: 5em;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-family: 'Saira', sans-serif;
+} p.sectDesc {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  font-size: 90%;
+}
+
+a { outline: none !important; }
+
+#github {
+  width: 1.5em !important;
+  height: 1.5em !important;
+  color: white;
+  cursor: pointer;
+} #specialGithub { display: flex; }
+
+.sidebar { 
+	background: #2f2e37;
+  position: fixed;
+  overflow-y: scroll !important;
+  width: 15em;
+  top: 3em !important;
+  margin: 0 auto;
+}
+
+.nav-link {
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  color: white !important;
+} 
+
+nav.main > * {
+  display: block !important;
+  position: relative;
+}
+
+.content {
+  background: #353b48;
+  position: absolute;
+  top: 4em;
+  padding: 1em;
+  width: calc(100% - 17.2em);
+  margin-right: 1em;
+  right: 0;
+  color: white;
+}
+
+div:not([contenteditable="true"]) > .cblock {
+  background: rgb(31, 30, 31) !important;
+  padding: 0.5em;
+  overflow: scroll;
+  border-radius: 5px;
+  z-index: 5;
+}
+
+h1 { font-family: 'Roboto', sans-serif; font-size: 400% !important; font-weight: bold; }
+h3 { font-family: 'Public Sans', sans-serif; }
+
+.desc { font-family: 'Roboto Mono', monospace; word-spacing: -2px !important; }
+.decl { color: #ff7979; font-weight: bold; }
+.rel { color: #ff7979; }
+.keyword { color: #7681ff; }
+.var { color: #c2fdf9 }
+.brac { color: #d1ccc0; }
+.oper { color: #ff4d4d; }
+.aoper { color: #ff4d4d !important; }
+.proc { color: #fa8231; }
+.meth { color: rgb(188, 80, 255); }
+.num { color: #2d98da; }
+.str, .str * { color: #7bed9f; font-weight: normal; }
+.comm, .comm * { color: #b2bec3 !important; font-weight: normal; }
+.specKey * { color: #FDA7DF !important; font-weight: bold; }
+.spec { color: #12CBC4; }
+.ktype { color: rgb(113, 215, 101); }
+.const { color: #f7d794; }
+.sblock { color: #7ed6df; }
+.isblock *, .isblock { color: #686de0; font-weight: normal; }
+.delim { color: #ecd554; font-weight: bold; }
+
+div:not([contenteditable="true"]) > pre, .miniBlock { font-family: 'Fira Code', monospace; }
+.miniBlock { 
+  width: fit-content; 
+  background: rgb(28, 29, 58); 
+  border-radius: 4px; 
+  display: inline;
+  margin-left: -2px;
+  margin-right: -2px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.nl {
+  color: white;
+  text-decoration: none;
+} .nl:hover { color: white; }
+
+a { color: #ff7f50; } a:hover { color: #ff6348; }
+.fc { width: fit-content !important; }
+.hov::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  transition: transform 0.2s ease-in-out;
+  transform: scale(0);
+} .hov:hover::after { transform: scale(.8); }
+.hov { font-family: 'Source Sans Pro', sans-serif !important; }
+
+.selShow { opacity: 1 !important; border: 2px solid salmon; }
+
+span > .nav-link { font-weight: 300; width: fit-content; }
+span > .nav-link:hover { text-decoration: underline; }
+
+.cur { background: #62788f; }
+.cur:hover { background: #62788f; }
+
+.next {
+  position: absolute;
+  color: black !important;
+  background: white;
+  border-radius: 3px;
+  top: calc(100% + 1.5em);
+  right: 0;
+} .next:hover { background: #dededd; }
+
+.prev {
+  position: absolute;
+  color: black !important;
+  background: white;
+  border-radius: 3px;
+  top: calc(100% + 1.5em);
+  left: 0;
+} .prev:hover { background: #dededd; }
+
+.break {
+  position: absolute;
+  top: calc(100% + 6em);
+  width: 1px;
+  height: 1px;
+}
+
+.sectSel, .sectSel:hover {
+  color: #ff6b81;
+} .sectSelHov::after {
+  background: #ff6b81 !important;
+}
+
+textarea {
+  color: white;
+  border: none;
+  height: calc(100% - 6em) !important;
+  width: calc(100vw - 23em) !important;
+  left: 2em !important;
+  top: 5.7em !important;
+  outline: none;
+  background: #353b48;
+  padding: 1.5em !important;
+  padding-left: 1em !important;
+  font-size: 80%;
+  font-family: 'JetBrains Mono', monospace;
+  white-space: pre-line;
+  position: absolute;
+}
+
+#minisb {
+  position: absolute;
+  top: 5.7em !important;
+  height: calc(100% - 6em) !important;
+  width: 2em !important;
+  background: black;
+  color: gray;
+  text-align: center;
+  padding-top: 1.5em !important;
+  font-size: 80%;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+#rsb {
+  position: absolute;
+  top: 3em !important;
+  height: calc(100% - 3em) !important;
+  width: 16.8em;
+  left: calc(100% - 16.8em);
+  background: #34495e;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+} #rsb h3 {
+  text-align: center;
+  margin-top: .5em;
+  font-family: 'Karla', sans-serif;
+  color: white;
+} #out {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 100vh/17 - 4em);
+  border: 3px solid white;
+  background: #2d3436;
+} #play {
+  height: calc(100vh/17 + 1em);
+  width: calc(100vh/17 + 1em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: .5em;
+  background: #000;
+  color: white;
+} #play:hover {
+  background: #232323;
+} #otype:not(.dd) {
+  position: relative;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  font-size: larger;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#install {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 5em;
+}
+
+.card {
+  background: white;
+  width: 45%;
+  height: fit-content;
+  border-radius: 0px;
+  transition: 0.2s;
+  padding: 2em;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 3px 10px rgba(212, 192, 192, 0.6);
+}
+
+.card h4 {
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  margin-top: 5px;
+} .card h5 {text-align: center;}
+
+.instr, .expla {
+  color: black;
+}
+
+.cin {
+  background: black;
+  border-radius: 10px;
+  padding: 1em;
+}
+
+.card .box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.subcard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin: 10px;
+  justify-content: center;
+  width: 45% !important;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(212, 192, 192, 0.6);
+  padding: 1em;
+} .dnl {
+  border-radius: 10px;
+  color: black;
+  height: fit-content;
+  display: inline-block;
+} 
+.card .box img {
+  position: relative;
+}
+
+#mac {
+  background: #5c5c5c;
+} #mac:hover {
+  background: #292828;
+}
+#lnx {
+  background: #ffbd42;
+} #lnx:hover {
+  background: #ff9b20;
+}
+#wnd {
+  background: rgb(120, 221, 255);
+} #wnd:hover {
+  background: rgb(52, 204, 255);
+}
+
+a:has(.dnl) {
+  text-decoration: none;
+}
+
+#sect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  gap: 1em;
+}
+
+.dd {
+  padding: .3em .5em;
+  background: #222f3e;
+  border-radius: 5px;
+}
+
+#gear, #psquare {
+  color: white;
+  cursor: pointer;
+  width: 3em;
+  height: 3em;
+  padding: .75em;
+  transition: 0.3s;
+}
+
+#gear {
+  background: #2d2d2d;
+} #gear:hover {
+  background: #444343;
+} #psquare:hover {
+  color: #dedede;
+} #psquare {
+  background: #1a1a1a;
+  margin-right: -3px !important;
+}
+
+#news {
+  display: flex;
+  gap: 5px;
+}
+
+#settings {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: calc(3em);
+  /* margin-right: 5px; */
+  z-index: 10;
+  background: #1a1a1a;
+} #settings span {
+  color: white;
+  font-family: 'Karla', sans-serif;
+  font-size: small;
+} #settings button {
+  font-size: 14px;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid rgb(132, 74, 68);
+  transition: 0.3s;
+} #settings button:hover {
+  border: 1px solid rgb(239, 99, 84);
+}
+
+#files {
+  width: 98%;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+} #files > div {
+  color: white;
+  font-family: 'Karla', sans-serif;
+  font-weight: 300;
+  position: relative;
+  border-radius: 0;
+  border-left: .5px solid white;
+  cursor: default;
+}
+
+.file.selected {
+  background: rgb(103, 98, 98);
+} .file:not(.selected) {
+  /* background: rgb(103, 98, 98); */
+}
+
+#fileCont {
+  width: calc(100% - 16.8em);
+  position: absolute;
+  display: flex;
+  top: 3em !important;
+  height: 1.5em;
+  background: rgb(83, 79, 79);
+}
+
+.file input {
+    all: unset;
+}
+
+#addFile {
+  position: relative;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 1em !important;
+  height: 1em !important;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  color: white;
+  background: black;
+  transition: 0.3s;
+} #addFile:hover {
+  background: rgb(90, 89, 89);
+}
+
+#play {
+  margin-left: -.5em;
+  margin-right: -.9em;
+  clip-path: polygon(71% 50%, 33% 72%, 33% 28%);
+  background: rgb(209, 222, 224);
+} #innerplay {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(67% 50%, 33% 68%, 33% 32%) !important;
+  background: #34495e;
+} #play:hover {
+  background: rgb(163, 172, 189);
+} #innerplay:hover {
+  background: #34495e;
+} 
+
+#filesave {
+  width: fit-content;
+  padding: 5px 8px 5px 8px !important;
+  border-radius: 5px;
+  color: black !important;
+  background: rgb(184, 214, 184);
+  margin-right: .8em;
+  position: relative;
+} #filesave:hover {
+  background: rgb(163, 202, 163);
+}
+
+#sect span {
+  color: white;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-right: .8em;
+} #sect div:has(span) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* margin-right: 1.3em; */
+}
