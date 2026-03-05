@@ -1,2 +1,2 @@
 # Bytl-Documentation
-Zip file of react project for Bytl documentation
+React TypeScript project of Bytl Documentation with MongoDB and Node.js backend
